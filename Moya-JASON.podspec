@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Source/*.swift"
-    #ss.dependency "Moya", "~> 10.0.0"
+    ss.dependency "Moya", "~> 10.0.0"
     ss.dependency "JASON"
     ss.framework  = "Foundation"
   end
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   s.subspec "RxSwift" do |ss|
     ss.source_files = "Source/RxSwift/*.swift"
     #ss.dependency "Moya/RxSwift", "~> 10.0.0"
-    #ss.dependency "Moya-JASON/Core"
+    ss.dependency "Moya-JASON/Core"
     ss.dependency "RxSwift"
   end
 
